@@ -14,4 +14,3 @@ def profile(username):
     if 'userLogged' not in session or session['userLogged'] != username:
         abort(401)
     return render_template('flprofile/profile.html', title='Твой профиль', username=username)
-
