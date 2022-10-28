@@ -3,4 +3,5 @@
 {% block content %}
 {{ super() }}
     <p>Профиль пользователя: {{username}}</p>
+    <a href="{{url_for('fllogin.logout')}}"></a>
 {% endblock %}
